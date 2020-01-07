@@ -3,8 +3,6 @@
 $data = null;
 
 if(isset($_GET['city'])) {
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
 	$apiKey = 'c9e521ce9d19eaee59d2bac74f6410a9';
 
 	$getCity = htmlspecialchars($_GET["city"]);
