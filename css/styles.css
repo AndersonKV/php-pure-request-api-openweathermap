@@ -1,0 +1,142 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+
+
+body {
+	background: Gainsboro;
+	font-family: 'Roboto', sans-serif;
+
+}
+nav {
+	padding: 20px;
+	background-color: dodgerblue;
+	color: #fff;
+ }
+
+nav h5 {
+	text-align: center;
+}
+
+.input-group {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+ 
+.input-group #city {
+	padding: 15px 30px;
+	background: #fff;
+}
+
+.input-group input[type=submit] {
+ 	position: absolute;
+ 	border: none;
+  	padding: 15px 27px;
+	background: none;
+	margin-top: -15px;
+	right:  -0px;
+	cursor: pointer;
+}
+
+ 
+.input-group div {
+	position: absolute;
+	border-radius: 3px;
+	padding: 15px 20px;
+	margin-top: 0px;
+	right:  0px;
+}
+
+.my-container {
+	padding: 0 30px;
+	margin: 0 auto;
+	max-width: 600px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.my-container h5 {
+ 	padding: 10px 0;
+}
+.container-weather {
+	background-color: whitesmoke;
+	display: grid;
+	grid-template-columns: 1fr;
+ 
+ 	margin: 15px 0 5px;
+	box-shadow: 1px 1px 2px #888888;
+	border-radius: 6px; 
+}
+
+.container-weather div {
+	padding: 5px 10px;
+}
+
+.text-date {
+ 	background: #fff;
+ 	border-top-left-radius: 6px;
+ 	border-top-right-radius: 6px;
+  	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.text-date span:first-child {
+ 	padding: 0 0 5px;
+}
+
+.icons-weather {
+ 	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.icons-weather span:nth-child(1) {
+	color: dodgerblue;
+}
+
+.icons-weather span:nth-child(2) {
+	color: darkred;
+}
+
+.icons-weather span {
+ 	padding: 10px 0 10px;
+}
+
+
+/*ul li:not(.year):nth-of-type(4n+2) { clear: left;  }
+*/
+.fa-arrow-up {
+	color: #000!important;
+}
+.fa-arrow-down {
+	color: #000!important;
+}
+
+
+.div-animation {
+ 	margin: 0 auto;
+ 	width: 100px;
+	display: grid;
+}
+
+.animation {
+  animation: move 400ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-35%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.text-red h1 {
+	 margin-top: 50px;
+	 background-color: black;
+	color: red;
+}
